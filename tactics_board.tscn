@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://cdqu4dqutgi4k"]
+[gd_scene load_steps=2 format=3 uid="uid://cdqu4dqutgi4k"]
+
+[ext_resource type="PackedScene" uid="uid://by7kqoep3sbt8" path="res://longhair.tscn" id="1_6d8lr"]
 
 [node name="TacticsBoard" type="Node2D"]
+
+[node name="LongHair" parent="." instance=ExtResource("1_6d8lr")]
+position = Vector2(531, 297)
