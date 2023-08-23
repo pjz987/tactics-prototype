@@ -1,8 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://cdqu4dqutgi4k"]
 
-[ext_resource type="PackedScene" uid="uid://by7kqoep3sbt8" path="res://longhair.tscn" id="1_6d8lr"]
+[ext_resource type="Script" path="res://tactics_board.gd" id="1_43712"]
 
 [node name="TacticsBoard" type="Node2D"]
-
-[node name="LongHair" parent="." instance=ExtResource("1_6d8lr")]
-position = Vector2(531, 297)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_43712")

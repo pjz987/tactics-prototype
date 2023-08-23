@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dicfqqq67d21n"]
+
+[ext_resource type="Texture2D" uid="uid://bjkkxlcwpa731" path="res://assets/TacticsCell-001.png" id="1_5nc7l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lrs7"]
+size = Vector2(256, 256)
+
+[node name="TacticsCell" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3lrs7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5nc7l")
