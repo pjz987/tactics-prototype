@@ -1,7 +1,74 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdqu4dqutgi4k"]
+[gd_scene load_steps=3 format=3 uid="uid://cdqu4dqutgi4k"]
 
 [ext_resource type="Script" path="res://tactics_board.gd" id="1_43712"]
+[ext_resource type="PackedScene" uid="uid://dicfqqq67d21n" path="res://tactics_cell.tscn" id="1_rrgt8"]
 
 [node name="TacticsBoard" type="Node2D"]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_43712")
+
+[node name="Cells" type="Node" parent="."]
+
+[node name="TacticsCell" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(64, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell2" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(192, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell3" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(320, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell4" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(448, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell7" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(64, 192)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell8" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(192, 192)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell9" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(320, 192)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell10" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(448, 192)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell13" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(64, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell14" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(192, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell15" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(320, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell16" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(448, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell19" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(64, 448)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell20" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(192, 448)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell21" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(320, 448)
+scale = Vector2(0.5, 0.5)
+
+[node name="TacticsCell22" parent="Cells" instance=ExtResource("1_rrgt8")]
+position = Vector2(448, 448)
+scale = Vector2(0.5, 0.5)
