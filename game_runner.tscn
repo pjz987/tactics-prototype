@@ -1,13 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://cefspm18avf1e"]
+[gd_scene load_steps=6 format=3 uid="uid://cefspm18avf1e"]
 
 [ext_resource type="Script" path="res://game_runner.gd" id="1_lvfgn"]
 [ext_resource type="Script" path="res://board/grid.gd" id="2_fma0c"]
+[ext_resource type="Texture2D" uid="uid://bjkkxlcwpa731" path="res://assets/TacticsCell-001.png" id="3_wicim"]
+[ext_resource type="PackedScene" uid="uid://by7kqoep3sbt8" path="res://longhair.tscn" id="4_pg384"]
 
 [sub_resource type="Resource" id="Resource_u6bpj"]
 script = ExtResource("2_fma0c")
-dimensions = Vector2i(10, 10)
+dimensions = Vector2i(5, 5)
 cell_size = 64
 
 [node name="GameRunner" type="Node2D"]
 script = ExtResource("1_lvfgn")
 grid = SubResource("Resource_u6bpj")
+cell_texture = ExtResource("3_wicim")
+cell_texture_scale = 0.25
+
+[node name="LongHair" parent="." instance=ExtResource("4_pg384")]
+z_index = 1
+position = Vector2(160, 32)
+scale = Vector2(0.25, 0.25)
