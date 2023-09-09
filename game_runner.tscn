@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cefspm18avf1e"]
+
+[ext_resource type="Script" path="res://game_runner.gd" id="1_lvfgn"]
+
+[node name="GameRunner" type="Node2D"]
+script = ExtResource("1_lvfgn")

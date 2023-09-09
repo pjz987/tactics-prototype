@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdqu4dqutgi4k"]
 
-[ext_resource type="Script" path="res://tactics_board.gd" id="1_43712"]
-[ext_resource type="PackedScene" uid="uid://dicfqqq67d21n" path="res://tactics_cell.tscn" id="1_rrgt8"]
+[ext_resource type="Script" path="res://board/tactics_board.gd" id="1_77vg7"]
+[ext_resource type="PackedScene" uid="uid://dicfqqq67d21n" path="res://board/tactics_cell.tscn" id="1_rrgt8"]
 
 [node name="TacticsBoard" type="Node2D"]
 scale = Vector2(0.5, 0.5)
-script = ExtResource("1_43712")
+script = ExtResource("1_77vg7")
 
 [node name="Cells" type="Node" parent="."]
 
